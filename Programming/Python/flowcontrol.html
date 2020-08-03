@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Flow Control (if-elif-else) | pattanps.github.io</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.be9aecc9.css" as="style"><link rel="preload" href="/assets/js/app.df9eb0a8.js" as="script"><link rel="preload" href="/assets/js/2.4c58b3db.js" as="script"><link rel="preload" href="/assets/js/8.db28eb02.js" as="script"><link rel="prefetch" href="/assets/js/10.3e1ed5aa.js"><link rel="prefetch" href="/assets/js/11.95a29798.js"><link rel="prefetch" href="/assets/js/12.ce2dab7b.js"><link rel="prefetch" href="/assets/js/13.5f86acde.js"><link rel="prefetch" href="/assets/js/14.f3ef476a.js"><link rel="prefetch" href="/assets/js/3.49871c63.js"><link rel="prefetch" href="/assets/js/4.d03f5b6b.js"><link rel="prefetch" href="/assets/js/5.32871c24.js"><link rel="prefetch" href="/assets/js/6.7fd9f43e.js"><link rel="prefetch" href="/assets/js/7.f297f3e4.js"><link rel="prefetch" href="/assets/js/9.416d5e11.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.be9aecc9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo1.png" alt="pattanps.github.io" class="logo"> <span class="site-name can-hide">pattanps.github.io</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Programming" class="dropdown-title"><span class="title">Programming</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          การสร้างโปรแกรมคอมพิวเตอร์เบื้องต้นด้วยPython
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/programming/python/intro.html" class="nav-link">
+  Intro
+</a></li><li class="dropdown-subitem"><a href="/programming/python/gettingstarted.html" class="nav-link">
+  Getting Started
+</a></li><li class="dropdown-subitem"><a href="/programming/python/basics.html" class="nav-link">
+  Basics
+</a></li><li class="dropdown-subitem"><a href="/programming/python/functions.html" class="nav-link">
+  Functions
+</a></li><li class="dropdown-subitem"><a href="/programming/python/flowcontrol.html" class="nav-link">
+  Flow Control
+</a></li><li class="dropdown-subitem"><a href="/programming/python/data.html" class="nav-link">
+  List
+</a></li><li class="dropdown-subitem"><a href="/programming/python/loop.html" class="nav-link">
+  Loop
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Programming" class="dropdown-title"><span class="title">Programming</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          การสร้างโปรแกรมคอมพิวเตอร์เบื้องต้นด้วยPython
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/programming/python/intro.html" class="nav-link">
+  Intro
+</a></li><li class="dropdown-subitem"><a href="/programming/python/gettingstarted.html" class="nav-link">
+  Getting Started
+</a></li><li class="dropdown-subitem"><a href="/programming/python/basics.html" class="nav-link">
+  Basics
+</a></li><li class="dropdown-subitem"><a href="/programming/python/functions.html" class="nav-link">
+  Functions
+</a></li><li class="dropdown-subitem"><a href="/programming/python/flowcontrol.html" class="nav-link">
+  Flow Control
+</a></li><li class="dropdown-subitem"><a href="/programming/python/data.html" class="nav-link">
+  List
+</a></li><li class="dropdown-subitem"><a href="/programming/python/loop.html" class="nav-link">
+  Loop
+</a></li></ul></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="flow-control-if-elif-else"><a href="#flow-control-if-elif-else" class="header-anchor">#</a> Flow Control (if-elif-else)</h1> <p></p><div class="table-of-contents"><ul><li><a href="#ตัวอย่างและ-flow-diagram">ตัวอย่างและ flow diagram</a></li><li><a href="#ตัวอย่างสร้างเงื่อนไข-c-ในใช้งาน-if-elif-else">ตัวอย่างสร้างเงื่อนไข C ในใช้งาน if-elif-else</a></li></ul></div>
+ทำการควบคุมการทำงานของโปรแกรมด้วยเงือนไขเป็นความรู้พื้นฐานเพื่อบรรลุการทำงานที่ซับซ้อนขึ้น เดิมทีการเลือกการทำงานใช้เหตุผลดังเช่น<p></p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">if</span><span class="token punctuation">(</span>ถ้า<span class="token punctuation">)</span> ฝนตก<span class="token punctuation">:</span>
+    เราจะไม่ออกจากบ้าน
+<span class="token keyword">if</span><span class="token punctuation">(</span>ถ้า<span class="token punctuation">)</span> มีร่ม <span class="token keyword">and</span><span class="token punctuation">(</span>และ<span class="token punctuation">)</span> ฝนตก<span class="token punctuation">:</span>
+    เราออกจากบ้านได้
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    ออกจากบ้าน
+</code></pre></div><p>เราสามารถสร้าง syntax เพื่อเขียนโปรแกรมได้ดังนี้</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">if</span> condition <span class="token punctuation">:</span>
+    statement1
+<span class="token keyword">else</span> <span class="token punctuation">:</span>
+    statement2
+</code></pre></div><h2 id="ตัวอย่างและ-flow-diagram"><a href="#ตัวอย่างและ-flow-diagram" class="header-anchor">#</a> ตัวอย่างและ flow diagram</h2> <p><img src="/assets/programming/python/images/if1.png" alt="if1"></p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">if</span> C1 <span class="token punctuation">:</span>
+    P1
+</code></pre></div><hr> <p><img src="/assets/programming/python/images/ifelse.png" alt="ifelse"></p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">if</span> C1<span class="token punctuation">:</span>
+    P1
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    P2
+</code></pre></div><hr> <p><img src="/assets/programming/python/images/ifnot.png" alt="ifnot"></p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">if</span> <span class="token keyword">not</span> C1<span class="token punctuation">:</span>
+    P1
+</code></pre></div><hr> <p><img src="/assets/programming/python/images/ifpasselse.png" alt="ifpasselse"></p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">if</span> C1<span class="token punctuation">:</span>
+    <span class="token keyword">pass</span>
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    P1
+</code></pre></div><hr> <p><img src="/assets/programming/python/images/ifelseif.png" alt="ifelseif"> <img src="/assets/programming/python/images/ifelseif2.png" alt="ifelseif2"></p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">if</span> C1<span class="token punctuation">:</span>
+    P1
+<span class="token keyword">elif</span> C2<span class="token punctuation">:</span>
+    P2
+<span class="token keyword">elif</span> C3<span class="token punctuation">:</span>
+    P3
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    P
+</code></pre></div><hr> <p><img src="/assets/programming/python/images/ififelse.png" alt="ififelse"></p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">if</span> C1<span class="token punctuation">:</span>
+    P1
+<span class="token keyword">if</span> C2<span class="token punctuation">:</span>
+    P2
+<span class="token keyword">if</span> C3<span class="token punctuation">:</span>
+    P3
+<span class="token keyword">else</span><span class="token punctuation">:</span>
+    P4
+</code></pre></div><hr> <h2 id="ตัวอย่างสร้างเงื่อนไข-c-ในใช้งาน-if-elif-else"><a href="#ตัวอย่างสร้างเงื่อนไข-c-ในใช้งาน-if-elif-else" class="header-anchor">#</a> ตัวอย่างสร้างเงื่อนไข C ในใช้งาน if-elif-else</h2> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">if</span> a<span class="token operator">%</span><span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">:</span>		<span class="token comment">#เป็นเลขคู่หรือไม</span>
+<span class="token keyword">if</span> a<span class="token operator">%</span><span class="token number">100</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token punctuation">:</span>		<span class="token comment">#a หารด้วย 100 ลงตัวหรือไม</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span>a<span class="token operator">//</span><span class="token number">100</span><span class="token punctuation">)</span><span class="token operator">%</span><span class="token number">10</span> <span class="token operator">==</span> <span class="token number">9</span> <span class="token punctuation">:</span>	<span class="token comment">#เลขหลักร้อยของ a คือ 9 หรือไม่ หรือ</span>
+<span class="token keyword">if</span> a <span class="token operator">&lt;=</span> x <span class="token operator">&lt;=</span> b <span class="token punctuation">:</span> 	<span class="token comment">#x มีค่าในช่วงตั้งแต่ a ถึง b หรือไม</span>
+</code></pre></div><div class="language-python extra-class"><pre class="language-python"><code>mx <span class="token operator">=</span> a
+<span class="token keyword">if</span> b <span class="token operator">&gt;</span> mx <span class="token punctuation">:</span> 
+    mx <span class="token operator">=</span> b
+<span class="token keyword">if</span> c <span class="token operator">&gt;</span> mx <span class="token punctuation">:</span> 
+    mx <span class="token operator">=</span> c
+<span class="token keyword">if</span> d <span class="token operator">&gt;</span> mx <span class="token punctuation">:</span> 
+    mx <span class="token operator">=</span> d 	
+<span class="token comment">#เก็บค่ามากสุดของ a,b,c และ d หรือเขียนโดยใช้ฟังก์ชัน max	</span>
+mx <span class="token operator">=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span>b<span class="token punctuation">,</span>c<span class="token punctuation">,</span>d<span class="token punctuation">)</span>		
+<span class="token comment">#max(a,b,c,d) หาค่ามากสุดของ a,b,c และ d</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.df9eb0a8.js" defer></script><script src="/assets/js/2.4c58b3db.js" defer></script><script src="/assets/js/8.db28eb02.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Python: Variables, expressions and statements | pattanps.github.io</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.be9aecc9.css" as="style"><link rel="preload" href="/assets/js/app.df9eb0a8.js" as="script"><link rel="preload" href="/assets/js/2.4c58b3db.js" as="script"><link rel="preload" href="/assets/js/6.7fd9f43e.js" as="script"><link rel="prefetch" href="/assets/js/10.3e1ed5aa.js"><link rel="prefetch" href="/assets/js/11.95a29798.js"><link rel="prefetch" href="/assets/js/12.ce2dab7b.js"><link rel="prefetch" href="/assets/js/13.5f86acde.js"><link rel="prefetch" href="/assets/js/14.f3ef476a.js"><link rel="prefetch" href="/assets/js/3.49871c63.js"><link rel="prefetch" href="/assets/js/4.d03f5b6b.js"><link rel="prefetch" href="/assets/js/5.32871c24.js"><link rel="prefetch" href="/assets/js/7.f297f3e4.js"><link rel="prefetch" href="/assets/js/8.db28eb02.js"><link rel="prefetch" href="/assets/js/9.416d5e11.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.be9aecc9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo1.png" alt="pattanps.github.io" class="logo"> <span class="site-name can-hide">pattanps.github.io</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Programming" class="dropdown-title"><span class="title">Programming</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          การสร้างโปรแกรมคอมพิวเตอร์เบื้องต้นด้วยPython
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/programming/python/intro.html" class="nav-link">
+  Intro
+</a></li><li class="dropdown-subitem"><a href="/programming/python/gettingstarted.html" class="nav-link">
+  Getting Started
+</a></li><li class="dropdown-subitem"><a href="/programming/python/basics.html" class="nav-link">
+  Basics
+</a></li><li class="dropdown-subitem"><a href="/programming/python/functions.html" class="nav-link">
+  Functions
+</a></li><li class="dropdown-subitem"><a href="/programming/python/flowcontrol.html" class="nav-link">
+  Flow Control
+</a></li><li class="dropdown-subitem"><a href="/programming/python/data.html" class="nav-link">
+  List
+</a></li><li class="dropdown-subitem"><a href="/programming/python/loop.html" class="nav-link">
+  Loop
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Programming" class="dropdown-title"><span class="title">Programming</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          การสร้างโปรแกรมคอมพิวเตอร์เบื้องต้นด้วยPython
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/programming/python/intro.html" class="nav-link">
+  Intro
+</a></li><li class="dropdown-subitem"><a href="/programming/python/gettingstarted.html" class="nav-link">
+  Getting Started
+</a></li><li class="dropdown-subitem"><a href="/programming/python/basics.html" class="nav-link">
+  Basics
+</a></li><li class="dropdown-subitem"><a href="/programming/python/functions.html" class="nav-link">
+  Functions
+</a></li><li class="dropdown-subitem"><a href="/programming/python/flowcontrol.html" class="nav-link">
+  Flow Control
+</a></li><li class="dropdown-subitem"><a href="/programming/python/data.html" class="nav-link">
+  List
+</a></li><li class="dropdown-subitem"><a href="/programming/python/loop.html" class="nav-link">
+  Loop
+</a></li></ul></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="python-variables-expressions-and-statements"><a href="#python-variables-expressions-and-statements" class="header-anchor">#</a> Python: Variables, expressions and statements</h1> <p></p><div class="table-of-contents"><ul><li><a href="#รู้จักข้อมูลขั้นต้น-string-interger-และ-float">รู้จักข้อมูลขั้นต้น String  interger และ float</a></li><li><a href="#การใส่คอมเม้นต์">การใส่คอมเม้นต์</a></li><li><a href="#ตัวดำเนินการ-ทางคณิตศาตร์พื้นฐาน">ตัวดำเนินการ ทางคณิตศาตร์พื้นฐาน</a></li><li><a href="#ชื่อและตัวแปร">ชื่อและตัวแปร</a></li></ul></div><p></p> <h2 id="รู้จักข้อมูลขั้นต้น-string-interger-และ-float"><a href="#รู้จักข้อมูลขั้นต้น-string-interger-และ-float" class="header-anchor">#</a> รู้จักข้อมูลขั้นต้น String  interger และ float</h2> <p>ข้อมูลในขั้นต้นนี้ จะนำเสนอสามชนิดข้อมูล ได้แก่ String integer และ float</p> <ol><li><p>String คือ กลุ่มตัวอังษร เช่น</p> <div class="language-python extra-class"><pre class="language-python"><code> <span class="token string">&quot;Hello&quot;</span>
+ <span class="token string">&quot;My name is Pattana.&quot;</span>
+ <span class="token string">&quot;ฉันเป็นคนไทย&quot;</span>
+ <span class="token string">'2 + 2'</span>
+</code></pre></div><p>สั่งเกตุได้ว่า ในการใส่ข้อมูลในในชุดคำสั่ง ตัวอักษรจะอยู่ในสัญลักษณ์ double quoat &quot;&quot; หรือ single quoat ''</p></li> <li><p>เป็นเลขจำนวนเต็ม ไม่มีจุดทศนิยม</p> <div class="language-console extra-class"><pre class="language-text"><code> 1
+ 3
+ 100000
+ 255
+</code></pre></div></li> <li><p>ตัวเลขที่เป็นจุดทศนิยม</p> <div class="language-console extra-class"><pre class="language-text"><code>0.00001
+1.34
+34.09
+3.14
+</code></pre></div></li></ol> <h2 id="การใส่คอมเม้นต์"><a href="#การใส่คอมเม้นต์" class="header-anchor">#</a> การใส่คอมเม้นต์</h2> <div class="language- extra-class"><pre class="language-text"><code># ใส่ comment เพื่อทำการอ่านโปรแกรมที่ตัวเองเขียนรู้เรื่อง (รวมถึงคนอื่นด้วย)
+
+# Python จะไม่อ่าน อะไีรก็ตามที่เขียนหลังจาก ตัว # 
+
+print(&quot;I could have code like this.&quot;) # และรวมถึงตรงนี้จะไม่อ่านด้วย
+
+# สามารถใช้ comment ด้วย # เพื่อละเลยบันทัดที่ไม่ต้องการออก
+
+# print(&quot;This won't run.&quot;)
+
+print(&quot;This will run.&quot;)
+
+&gt;&gt; This will run.
+</code></pre></div><h2 id="ตัวดำเนินการ-ทางคณิตศาตร์พื้นฐาน"><a href="#ตัวดำเนินการ-ทางคณิตศาตร์พื้นฐาน" class="header-anchor">#</a> ตัวดำเนินการ ทางคณิตศาตร์พื้นฐาน</h2> <p>ในขั้นต้น จะให้นักเรียนลองทำความรู้จักกับ คำสั่งตัวดำเนินารต่อไปนี้</p> <div class="language-python extra-class"><pre class="language-python"><code>• <span class="token operator">+</span><span class="token punctuation">:</span> plus 
+• <span class="token operator">-</span><span class="token punctuation">:</span> minus
+• <span class="token operator">/</span><span class="token punctuation">:</span> slash
+• <span class="token operator">*</span><span class="token punctuation">:</span> asterisk
+• <span class="token operator">%</span><span class="token punctuation">:</span> percent
+• <span class="token operator">&lt;</span><span class="token punctuation">:</span> less<span class="token operator">-</span>than
+• <span class="token operator">&gt;</span><span class="token punctuation">:</span> greater<span class="token operator">-</span>than
+• <span class="token operator">&lt;=</span><span class="token punctuation">:</span> less<span class="token operator">-</span>than<span class="token operator">-</span>equal
+• <span class="token operator">&gt;=</span><span class="token punctuation">:</span> greater<span class="token operator">-</span>than<span class="token operator">-</span>equal
+</code></pre></div><p>โดยศึกษา code ต่อไปนี้</p> <div class="language-python extra-class"><pre class="language-python"><code><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;ฉันจะนับหมากับแมว:&quot;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;หมา&quot;</span><span class="token punctuation">,</span> <span class="token number">25</span> <span class="token operator">+</span> <span class="token number">7</span> <span class="token operator">/</span> <span class="token number">6</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;แมว&quot;</span><span class="token punctuation">,</span> <span class="token number">100</span> <span class="token operator">-</span> <span class="token number">25</span> <span class="token operator">*</span> <span class="token number">3</span> <span class="token operator">%</span> <span class="token number">4</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;ต่อไปจะนับ หนู:&quot;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">-</span> <span class="token number">5</span> <span class="token operator">+</span> <span class="token number">4</span> <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">-</span> <span class="token number">1</span> <span class="token operator">/</span> <span class="token number">4</span> <span class="token operator">+</span> <span class="token number">6</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;จริงไหมว่า 3 + 2 &lt; 5 - 7?&quot;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">3</span> <span class="token operator">+</span> <span class="token number">2</span> <span class="token operator">&lt;</span> <span class="token number">5</span> <span class="token operator">-</span> <span class="token number">7</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;3 + 2 ได้เท่าไหร่&quot;</span><span class="token punctuation">,</span> <span class="token number">3</span> <span class="token operator">+</span> <span class="token number">2</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;5 - 7 ได้เท่าไหร่&quot;</span><span class="token punctuation">,</span> <span class="token number">5</span> <span class="token operator">-</span> <span class="token number">7</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;อ่าว แล้ว 'False' คืออะไร&quot;</span><span class="token punctuation">)</span>
+</code></pre></div><p>เมื่อรันแล้วจะออกได้ดังนี้</p> <div class="language- extra-class"><pre class="language-text"><code>ฉันจะนับหมากับแมว:
+หมา 26.166666666666668
+แมว 97
+ต่อไปจะนับ หนู:
+6.75
+จริงไหมว่า 3 + 2 &lt; 5 - 7?
+False
+3 + 2 ได้เท่าไหร่ 5
+5 - 7 ได้เท่าไหร่ -2
+อ่าว แล้ว 'False' คืออะไร
+</code></pre></div><h2 id="ชื่อและตัวแปร"><a href="#ชื่อและตัวแปร" class="header-anchor">#</a> ชื่อและตัวแปร</h2> <p>ในการทำ program ตัวแปร(variable)คือชื่อของบางสิ่งที่กำหนดมา คนพัฒนาหรือเขียนโปรแกรมจะเขียนโค้ดเพื่อแทนสิ่งของต่างๆด้วยภาษาอังกฤษ(ภาษาที่คนอ่านเข้าใจ)เพื่อช่วยเหลือให้พวกเขาจำ และเรียกมาใช้งานสืบไป</p> <p>ตัวอย่าง</p> <div class="language-python extra-class"><pre class="language-python"><code>cars <span class="token operator">=</span> <span class="token number">100</span>
+space_in_a_car <span class="token operator">=</span> <span class="token number">4.0</span>
+drivers <span class="token operator">=</span> <span class="token number">30</span>
+passengers <span class="token operator">=</span> <span class="token number">90</span>
+cars_not_driven <span class="token operator">=</span> cars <span class="token operator">-</span> drivers
+cars_driven <span class="token operator">=</span> drivers
+carpool_capacity <span class="token operator">=</span> cars_driven <span class="token operator">*</span> space_in_a_car
+average_passengers_per_car <span class="token operator">=</span> passengers <span class="token operator">/</span> cars_driven
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;มีรถจำนวน&quot;</span><span class="token punctuation">,</span> cars<span class="token punctuation">,</span> <span class="token string">&quot;คัน ที่ ใช้ได้&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;มีจำนวนคนขับรถได้&quot;</span><span class="token punctuation">,</span> drivers<span class="token punctuation">,</span> <span class="token string">&quot; คน ที่ใช้ได้&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;ดังนั้นจะมีรถที่ว่าง&quot;</span><span class="token punctuation">,</span> cars_not_driven<span class="token punctuation">,</span> <span class="token string">&quot;คัน วันนี้&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;และเราสามารถขนส่งคนได้จำนวน&quot;</span><span class="token punctuation">,</span> carpool_capacity<span class="token punctuation">,</span> <span class="token string">&quot;คน วันนี้&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;มีผู้โดยสาร&quot;</span><span class="token punctuation">,</span> passengers<span class="token punctuation">,</span> <span class="token string">&quot;คน จะมาที่มาหารถเช่าวันนี้&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;โดยเฉลี่ยแล้ว วันนี้จะ มีผูโดยสาร&quot;</span><span class="token punctuation">,</span> average_passengers_per_car<span class="token punctuation">,</span><span class="token string">&quot;คน ต่อรถแต่ละคัน&quot;</span><span class="token punctuation">)</span> 
+</code></pre></div><p>เมื่อรันให้ผลออกมาจะได้</p> <div class="language- extra-class"><pre class="language-text"><code>&gt;&gt;
+มีรถจำนวน 100 คัน ที่ ใช้ได้
+มีจำนวนคนขับรถได้ 30  คน ที่ใช้ได้
+ดังนั้นจะมีรถที่ว่าง 70 คัน วันนี้
+และเราสามารถขนส่งคนได้จำนวน 120.0 คน วันนี้
+มีผู้โดยสาร 90 คน จะมาที่มาหารถเช่าวันนี้
+โดยเฉลี่ยแล้ว วันนี้จะ มีผูโดยสาร 3.0 คน ต่อรถแต่ละคัน
+</code></pre></div><h1 id="ตัวอย่าง-program"><a href="#ตัวอย่าง-program" class="header-anchor">#</a> ตัวอย่าง program</h1> <div class="language-python extra-class"><pre class="language-python"><code><span class="token comment">#ตัวอย่าง</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;การคำนวเวลาตกของวัตถุจากตึก&quot;</span><span class="token punctuation">)</span>
+
+buiding_height <span class="token operator">=</span> <span class="token number">1000</span>
+my_object <span class="token operator">=</span> <span class="token string">&quot;แตงโมง&quot;</span>
+<span class="token comment">#คำนวนเวลาผ่านสมการการเคลื่อนที่</span>
+time_consuming <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">*</span>buiding_height<span class="token operator">/</span><span class="token number">9.81</span><span class="token punctuation">)</span><span class="token operator">**</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token operator">/</span><span class="token number">2</span><span class="token punctuation">)</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;ความสูงของตึกเป็น&quot;</span><span class="token punctuation">,</span> buiding_height<span class="token punctuation">,</span> <span class="token string">&quot;เมตร&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">&quot;เมื่อปล่อย&quot;</span><span class="token punctuation">,</span>my_object<span class="token punctuation">,</span><span class="token string">&quot;ให้ตกอย่างอิสระจากยอดตึก พบว่า&quot;</span><span class="token punctuation">,</span>my_object<span class="token punctuation">,</span><span class="token string">&quot;จะตกถึงพื้นในเวลา&quot;</span><span class="token punctuation">,</span>time_consuming<span class="token punctuation">,</span><span class="token string">&quot;วินาที&quot;</span><span class="token punctuation">)</span>
+
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.df9eb0a8.js" defer></script><script src="/assets/js/2.4c58b3db.js" defer></script><script src="/assets/js/6.7fd9f43e.js" defer></script>
+  </body>
+</html>

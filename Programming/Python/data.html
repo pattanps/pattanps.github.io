@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>การเก็บข้อมูลแบบ List | pattanps.github.io</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="Just playing around">
+    <link rel="preload" href="/assets/css/0.styles.be9aecc9.css" as="style"><link rel="preload" href="/assets/js/app.df9eb0a8.js" as="script"><link rel="preload" href="/assets/js/2.4c58b3db.js" as="script"><link rel="preload" href="/assets/js/7.f297f3e4.js" as="script"><link rel="prefetch" href="/assets/js/10.3e1ed5aa.js"><link rel="prefetch" href="/assets/js/11.95a29798.js"><link rel="prefetch" href="/assets/js/12.ce2dab7b.js"><link rel="prefetch" href="/assets/js/13.5f86acde.js"><link rel="prefetch" href="/assets/js/14.f3ef476a.js"><link rel="prefetch" href="/assets/js/3.49871c63.js"><link rel="prefetch" href="/assets/js/4.d03f5b6b.js"><link rel="prefetch" href="/assets/js/5.32871c24.js"><link rel="prefetch" href="/assets/js/6.7fd9f43e.js"><link rel="prefetch" href="/assets/js/8.db28eb02.js"><link rel="prefetch" href="/assets/js/9.416d5e11.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.be9aecc9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/assets/img/logo1.png" alt="pattanps.github.io" class="logo"> <span class="site-name can-hide">pattanps.github.io</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Programming" class="dropdown-title"><span class="title">Programming</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          การสร้างโปรแกรมคอมพิวเตอร์เบื้องต้นด้วยPython
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/programming/python/intro.html" class="nav-link">
+  Intro
+</a></li><li class="dropdown-subitem"><a href="/programming/python/gettingstarted.html" class="nav-link">
+  Getting Started
+</a></li><li class="dropdown-subitem"><a href="/programming/python/basics.html" class="nav-link">
+  Basics
+</a></li><li class="dropdown-subitem"><a href="/programming/python/functions.html" class="nav-link">
+  Functions
+</a></li><li class="dropdown-subitem"><a href="/programming/python/flowcontrol.html" class="nav-link">
+  Flow Control
+</a></li><li class="dropdown-subitem"><a href="/programming/python/data.html" class="nav-link">
+  List
+</a></li><li class="dropdown-subitem"><a href="/programming/python/loop.html" class="nav-link">
+  Loop
+</a></li></ul></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Programming" class="dropdown-title"><span class="title">Programming</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          การสร้างโปรแกรมคอมพิวเตอร์เบื้องต้นด้วยPython
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/programming/python/intro.html" class="nav-link">
+  Intro
+</a></li><li class="dropdown-subitem"><a href="/programming/python/gettingstarted.html" class="nav-link">
+  Getting Started
+</a></li><li class="dropdown-subitem"><a href="/programming/python/basics.html" class="nav-link">
+  Basics
+</a></li><li class="dropdown-subitem"><a href="/programming/python/functions.html" class="nav-link">
+  Functions
+</a></li><li class="dropdown-subitem"><a href="/programming/python/flowcontrol.html" class="nav-link">
+  Flow Control
+</a></li><li class="dropdown-subitem"><a href="/programming/python/data.html" class="nav-link">
+  List
+</a></li><li class="dropdown-subitem"><a href="/programming/python/loop.html" class="nav-link">
+  Loop
+</a></li></ul></li></ul></div></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="การเก็บข้อมูลแบบ-list"><a href="#การเก็บข้อมูลแบบ-list" class="header-anchor">#</a> การเก็บข้อมูลแบบ List</h1> <p></p><div class="table-of-contents"><ul><li><a href="#ตัวอย่างการสร้าง-list">ตัวอย่างการสร้าง list</a></li><li><a href="#การเข้าถึงข้อมูลใน-list">การเข้าถึงข้อมูลใน List</a></li><li><a href="#คำสั่งพื้นฐาน-method-ที่ใช้งานกับ-list">คำสั่งพื้นฐาน(method)ที่ใช้งานกับ List</a></li></ul></div>
+รายการหรือลิสต์ (list) เป็นที่เก็บกลุ่มของข้อมูลที่มีลำดับ แต่ละตัวมีเลข index กำกับลำดับ ตัวซ้ายสุดมี index 0<p></p> <h2 id="ตัวอย่างการสร้าง-list"><a href="#ตัวอย่างการสร้าง-list" class="header-anchor">#</a> ตัวอย่างการสร้าง list</h2> <div class="language-python extra-class"><pre class="language-python"><code>x <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> 
+หรือ 
+x <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment">#ได้ลิสต์ว่าง ๆ มี len(x) เป็น 0</span>
+x <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">*</span><span class="token number">10</span> <span class="token comment">#ได้ x = [0,0,0,0,0,0,0,0,0,0]</span>
+x <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span> <span class="token comment">#ได้ลิสต์ที่มีข้อมูลตามที่หยิบออกมาจาก a (ด้วย for e in a )</span>
+x <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token string">'abcde'</span><span class="token punctuation">)</span> <span class="token comment">#ได้ x = ['a', 'b', 'c', 'd', 'e']</span>
+x <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">#ได้ x = [1,3,5,7,9]</span>
+a <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span> b <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">;</span> c <span class="token operator">=</span> b<span class="token punctuation">;</span> d <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span> <span class="token comment">#ได้ผลดังรูปขวา ที่น่าสนใจคือ คำสั่ง c = b ทำให้ c กับ b เป็นลิสต์เดียวกัน</span>
+</code></pre></div><h2 id="การเข้าถึงข้อมูลใน-list"><a href="#การเข้าถึงข้อมูลใน-list" class="header-anchor">#</a> การเข้าถึงข้อมูลใน List</h2> <p>ข้อมูลแบบ List นั้นสามารถเข้าถึงข้อมูลภายในได้ ผ่าน index หรือเลขที่ระบุข้อมูลใน list</p> <p><img src="/assets/programming/python/images/listindex.png" alt="listindex"></p> <p>ตัวอย่าง</p> <div class="language-python extra-class"><pre class="language-python"><code>L <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'red'</span><span class="token punctuation">,</span> <span class="token string">'green'</span><span class="token punctuation">,</span> <span class="token string">'blue'</span><span class="token punctuation">,</span> <span class="token string">'yellow'</span><span class="token punctuation">,</span> <span class="token string">'black'</span><span class="token punctuation">]</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>L<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment"># Prints red</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span>L<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token comment"># Prints blue</span>
+</code></pre></div><h2 id="คำสั่งพื้นฐาน-method-ที่ใช้งานกับ-list"><a href="#คำสั่งพื้นฐาน-method-ที่ใช้งานกับ-list" class="header-anchor">#</a> คำสั่งพื้นฐาน(method)ที่ใช้งานกับ List</h2> <p>x.append(e) เพิ่ม e ต่อท้าย (ทางขวา) ของลิสต์ x</p> <p>x.insert(i, e) แทรก e ไว้ที่ index i ของลิสต์ x</p> <p>x.pop(i) ลบข้อมูลตัวที่ index i ของลิสต์ x และคืนข้อมูลที่ถูกลบเป็นผลลัพธ</p> <p>x.sort() ทำให้ข้อมูลในลิสต์ x เรียงจากน้อยไปมาก คำสั่งนี้ไม่มีผลคืนกลับมา</p> <p>sorted(x) คืนลิสต์ที่มีค่าเหมือนกับที่แจงออกจาก แต่เรียงลำดับข้อมูลจากน้อยไปมากให้เรียบร้อย( x ไม่เปลี่ยนแปลง)</p> <p>sum(x) คืนผลรวมของจำนวนในลิสต์ x</p> <p>max(x) คืนค่ามากสุดในลิสต์ x , min(x) คืนค่าน้อยสุดในลิสต์ x</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>ยังมีการจัดเก็บข้อมูลที่น่าสนใจอย่าง Tupple Dictionary และ Set ที่น่าศึกษาสามารถอ่านเพิ่มได้ใน <a href="https://www.cp.eng.chula.ac.th/books/python101/" target="_blank" rel="noopener noreferrer">Python ๑๐๑ - วิศวกรรมคอมพิวเตอร์ จุฬาลงกรณ์มหาวิทยาลัย<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.df9eb0a8.js" defer></script><script src="/assets/js/2.4c58b3db.js" defer></script><script src="/assets/js/7.f297f3e4.js" defer></script>
+  </body>
+</html>
